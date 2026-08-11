@@ -1,8 +1,8 @@
-function Header(){
+function Header(props){
     return (
         <header>
-            <h1>Blog name</h1>
-            </header>
+            <h1>{props.name}</h1>
+           </header>
     );
 }
 

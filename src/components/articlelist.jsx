@@ -1,11 +1,18 @@
-function ArticleList() {
+import Article from "./article";
+
+function ArticleList(props) {
   return (
     <main>
-      <Article />
+      {props.posts.map(post => (
+        <Article
+          key={post.id}
+          title={post.title}
+          date={post.date}
+          preview={post.preview}
+        />
+      ))}
     </main>
   );
 }
-
-import Article from "./article";
 
 export default ArticleList;

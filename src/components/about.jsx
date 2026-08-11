@@ -1,8 +1,8 @@
-function About(){
+function About(props){
     return (
         <aside>
-            <img src="" alt="blog logo" />
-            <p>About the Blog</p>
+            <img src={props.image} alt="blog logo" />
+            <p>{props.about}</p>
             </aside>
     );
 }
