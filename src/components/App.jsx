@@ -4,7 +4,6 @@ import blogData from "../data/blog";
 import Header from "./header";
 import About from "./about";
 import Articlelist from "./articlelist";
-import BlogData from "./blog";
 
 console.log(blogData);
 
